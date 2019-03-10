@@ -1,8 +1,12 @@
+import vHeader from '@/components/header.vue'
+import sideBar from '@/components/sideBar.vue'
+import carousel from '@/components/carousel.vue'
+
 export default {
-    name: 'Home',
+    name: 'home',
     mixins: [],
     extends: {},
-    components: {},
+    components: { vHeader, sideBar, carousel },
     props: [],
     data() {
         return {};
