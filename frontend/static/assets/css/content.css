@@ -1,0 +1,20 @@
+.content {
+    float: left;
+    width: 75%;
+    margin: 1%
+}
+
+.content.fullwidth {
+    width: 100%;
+}
+
+.content:after {
+    content: " ";
+    clear: both;
+    height: 30px;
+    display: block;
+}
+
+.content .table p {
+    margin-bottom: 15px;
+}

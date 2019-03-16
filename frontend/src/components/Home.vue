@@ -1,8 +1,8 @@
 <template>
   <div>
-    <v-header></v-header>
+    <!-- <v-header id="home"></v-header> -->
     <carousel></carousel>
-    <side-bar></side-bar>
+    <router-view></router-view>
   </div>
 </template>
 <!-- .js 檔案在此相依 -->

@@ -1,0 +1,123 @@
+@media (max-width:1103px) {
+	.main { padding-left: 0px; }
+}
+
+/*寬最大1200px*/
+@media (min-width:1200px) {
+	.alert-result table.table-nobordered th { width: 80px; }
+}
+@media (max-width:1200px) {
+	.sidebar { width: 35%; float: left; padding: 0 20px 0 0; }
+	.content { float: left; width: 60%; }
+	.alert-result table.table-nobordered th { width: 80px; }
+	.SearchBar select { width: 80%; }
+	.SearchBar input.search-query { width: 60%; }
+	.titlebarbox { min-width: 930px; }
+	.titlebarbox:after { margin-right: 220px; }
+	.forminput-box:before { top: 20px; left: -20px; background-size: 85%; }
+	.forminput-box:after { display: none; }
+	.forminput-box .formentry { top: 70px; right: 30px; }
+}
+@media (max-width:980px) {
+	.einvoiceset { min-height: 450px; height: 450px; margin-bottom: 120px; }
+	.forminput-box:before { top: 0px; left: -50px; background-size: 60%; }
+	.forminput-box:after { display: none; }
+	.forminput-box .formentry { top: 20px; right: 0px; }
+	.titlebarbox { min-width: 750px; bottom: -25px; }
+	.titlebarbox:after { margin-right: 150px; }
+	.billsample .zoomtool { right: 0px; top: -40px; }
+}
+@media (max-width:950px) {
+	.sidebar { width: 45%; float: left; padding: 0 20px 0 0; }
+	.content { float: left; width: 50%; }
+}
+
+/*寬最大767px*/
+@media (max-width:768px) {
+	.einvoiceset { min-height: 390px; height: 390px; margin-bottom: 120px; }
+	.forminput-box:before { top: 30px; left: -20px; background-size: 55%; }
+	.forminput-box:after { display: none; }
+	.forminput-box .formentry { top: 20px; right: 0px; }
+	.titlebarbox { min-width: 720px; bottom: -25px; }
+	.titlebarbox p { font-size: 12px; }
+	.titlebarbox:after { margin-right: 150px; }
+	.billsample .zoomtool { right: 0px; top: -40px; }
+
+	/*側邊選單*/
+	.sidebar, .content { width: 100%; float: none; padding: 0; }
+	.btn-collapse-menu { display: block; border: #f0831e solid 2px; padding: 0 0 0 10px; line-height: 50px; background: none; width: 100%; border-radius: 0; text-align: left; font-size: 15px; font-weight: bold; }
+	.btn-collapse-menu:after { content: "▼"; color: #fff; font-size: 6px; padding: 0; background: #f0831e; width: 48px; display: inline-block; float: right; text-align: center; vertical-align: central; }
+	#collapse-menu { }
+	#collapse-menu.collapse { height: 0; }
+	#SideIntro { display: none; }
+
+	/*會員狀態*/
+	#MemberStatus { white-space: nowrap; text-overflow: ellipsis; background: #f0f0f0; margin: 0 0 5px 0; padding: 0 100px 0 10px; vertical-align: top; height: 50px; line-height: 50px; overflow: hidden; }
+	#MemberStatus span { display: none; }
+	#MemberStatus ul { margin: 0; }
+	#MemberStatus ul li { display: inline-block; }
+	#MemberStatus a.btn-edit { top: 0; border: none; width: 50px; height: 50px; display: inline-block; background: #db0100; }
+	#MemberStatus a.btn-edit:before { margin: 15px 0 0 3px; }
+	.alert-result table.table-nobordered th { width: auto; }
+	.ContactSet .span2 { text-align: left; }
+	.FlowStyle2 .mask { background: url(../img/Progressbars_10.png) no-repeat left top; width: 100%; background-size: 100% 100%; height: 100%; display: block; position: absolute; }
+}
+@media (max-width:767px) {
+	.einvoiceset { min-height: 390px; height: 390px; margin-bottom: 120px; }
+	.forminput-box:before { display: none; }
+	.forminput-box:after { display: none; }
+	.forminput-box .formentry { top: 10px; right: 5%; }
+	.titlebarbox { min-width: 100%; bottom: -25px; }
+	.titlebarbox h4 { float: left; width: 180px; height: 47px; font-size: 16px; background: url(../img/einvoice/einvoice_leftbar.png) no-repeat -155px top; }
+	.titlebarbox p { font-size: 12px; }
+	.titlebarbox:after { margin-right: 150px; }
+	.billsample .zoomtool { right: 30px; top: -40px; }
+	#MemberStatusInvoice { background: url(../img/einvoice/einvoice_phone2.jpg) no-repeat left top; width: 100%; height: inherit; display: block; margin-top: 10px; margin-right: 10px; position: relative; margin-bottom: 20px; padding-top: 100px; }
+	#MemberStatusInvoice .device-num { width: 90%; background: #eee; padding: 10px 10px; border-top: 0px solid #ddd; position: relative; top: inherit; left: inherit; border-radius: 10px; font-size: 20px; line-height: 1.5em; color: #68ac1a }
+	#MemberStatusInvoice .device-num span { display: inline-block; margin-right: 7px; }
+}
+@media (max-width:765px) {
+	.main { width: 100%; }
+	header { height: 80px; }
+}
+
+/*寬最大480px*/
+@media (max-width:480px) {
+	.einvoiceset { min-height: 390px; height: 390px; margin-bottom: 150px; background: none; }
+	.forminput-box:before { display: none; }
+	.forminput-box:after { display: none; }
+	.txt_input, .btn_submit { height: 30px !important; line-height: 30px !important; }
+	.btn_submit { height: 40px !important; line-height: 37px !important; font-size: 15px !important; padding: 2px 10px !important; margin-top: 5px; }
+	.forminput-box .formentry .code { width: 100% !important; max-width: 100% !important; }
+	.forminput-box .formentry { background: url(../img/einvoice/einvoice_form.png) no-repeat -80px top; background-size: cover; width: 100%; height: 284px; display: block; position: absolute; top: 0px; right: 0; z-index: 5; color: #fff; font-size: 16px; padding: 20px 0px 20px 0px; }
+	.w95, .w170 { width: 93% !important; }
+	.forminput-box .formentry td { vertical-align: top; }
+	.titlebarbox { min-width: 100%; bottom: -25px; }
+	.titlebarbox h4 { float: none; width: 180px; height: 47px; font-size: 16px; background: none; }
+	.titlebarbox p { font-size: 12px; }
+	.titlebarbox:after { content: ""; width: 0; height: 0; border-left: 30px solid transparent; border-right: 30px solid transparent; border-top: 30px solid #e6e6e6; float: right; margin-top: -30px; margin-right: 130px; }
+	.billsample .zoomtool { right: 0px; top: -40px; }
+	.btn.fa-search { display: block; }
+	#SearchTool.collapse { height: 0; }
+	.SearchBar ul.pull-right { border: none; border-bottom: #ccc dotted 1px; }
+	.SearchBar ul, .SearchBar ul.pull-right { width: 100%; float: none; padding: 10px 0; }
+	input.search-query { width: 90%; }
+
+	/*線上繳款並列特殊按鈕樣式設定*/
+	.btn-group-block .btn-primary { width: 100%; }
+	.SearchBar select { width: 80%; }
+	.list_function img { width: 20%; }
+	.list_function .caption { width: 70%; }
+	.list_FuncQA > li { width: 100%; height: 100%;  }
+}
+@media (max-width:380px) {
+	.titlebarbox p { font-size: 12px; line-height: 1.5em; text-align: left; }
+	.titlebarbox:after { float: right; margin-top: -10px; margin-right: 100px; }
+	.billsample .zoomtool { right: -28px; top: -30px; }
+}
+
+/*寬最大360px*/
+@media (max-width:320px) {
+	input.search-query { width: 70%; }
+	.list_FuncQA > li { width: 100%; height: 100%;  }
+}

@@ -1,16 +1,15 @@
 <template>
   <div id="app" style="width: 100%;">
-    <router-view/>
+    <router-view class="main"/>
   </div>
 </template>
 
 <script>
+import vHeader from '@/components/header.vue'
 
 export default {
   name: 'App',
-  components: {
-    
-  }
+  components: { vHeader }
 }
 </script>
 

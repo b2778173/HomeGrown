@@ -1,107 +1,59 @@
 <template>
- <div>
-     <nav class="col-md-2 d-none d-md-block bg-light sidebar">
-      <div class="sidebar-sticky">
-        <ul class="nav flex-column">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">
-              <span data-feather="home"></span>
-              Dashboard <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <span data-feather="file"></span>
-              Orders
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-               <shopping-cart-icon class="custom-class"></shopping-cart-icon>
-              Products
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <span data-feather="users"></span>
-              Customers
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <span data-feather="bar-chart-2"></span>
-              Reports
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <span data-feather="layers"></span>
-              Integrations
-            </a>
-          </li>
-        </ul>
-
-        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-          <span>Saved reports</span>
-          <a class="d-flex align-items-center text-muted" href="#">
-            <span data-feather="plus-circle"></span>
-          </a>
-        </h6>
-        <ul class="nav flex-column mb-2">
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <span data-feather="file-text"></span>
-              Current month
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <span data-feather="file-text"></span>
-              Last quarter
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <file-text-icon class="custom-class"></file-text-icon>
-              Social engagement
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <span data-feather="file-text"></span>
-              Year-end sale
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
- </div>
+    <Menu active-name="1-2" :open-names="['1']" class="sidebar" style="width:">
+        <Submenu name="1">
+            <template slot="title">
+                <Icon type="ios-sunny-outline" />
+               季節
+            </template>           
+                <MenuItem name="1-1">春裝館</MenuItem>
+                <MenuItem name="1-2">夏裝館</MenuItem>
+                <MenuItem name="1-3">秋裝館</MenuItem>
+                <MenuItem name="1-4">冬裝館</MenuItem>
+        </Submenu>
+        <Submenu name="2">
+            <template slot="title">
+                <Icon type="ios-filing" />
+               最新商品
+            </template>
+            <MenuItem name="2-1">Option 5</MenuItem>
+            <MenuItem name="2-2">Option 6</MenuItem>
+            <Submenu name="3">
+                <template slot="title">Submenu</template>
+                <MenuItem name="3-1">Option 7</MenuItem>
+                <MenuItem name="3-2">Option 8</MenuItem>
+            </Submenu>
+        </Submenu>
+        <Submenu name="4">
+            <template slot="title">
+                <Icon type="ios-cog" />
+                熱賣
+            </template>
+            <MenuItem name="4-1">Option 9</MenuItem>
+            <MenuItem name="4-2">Option 10</MenuItem>
+            <MenuItem name="4-3">Option 11</MenuItem>
+            <MenuItem name="4-4">Option 12</MenuItem>
+        </Submenu>
+    </Menu>
 </template>
-<!-- .js 檔案在此相依 -->
 <script>
-import { FileTextIcon, ShoppingCartIcon  } from 'vue-feather-icons'
-
-export default {
-    name: '',
-    mixins: [],
-    extends: {},
-    components: { FileTextIcon, ShoppingCartIcon  },
-    props: [],
-    data() {
+    
+    export default {
+      name: '',
+      mixins: [],
+      extends: {},
+      components: {},
+      props: [],
+      data() {
         return {
         };
-    },
-    computed: {},
-    watch: {},
-    created() {},
-    mounted() {},
-    updated() {},
-    beforeDestroy() {},
-    methods: {},
-};
+      },
+      computed: {},
+      watch: {},
+      created() {},
+      mounted() {},
+      updated() {},
+      beforeDestroy() {},
+      methods: {},
+    };
+    
 </script>
-
-<style>
-    /* @import url(../../static/assets/css/sideBar.css); */
-    @import url(../../static/assets/css/dashBoard.css);
-</style>
