@@ -1,7 +1,17 @@
 <template>
   <div>
-    <div id="">
-      <v-app id="inspire">
+    <Breadcrumb style="margin-left: 15px;float: left;">
+        <BreadcrumbItem to="/">
+            <Icon type="ios-home-outline"></Icon> Home
+        </BreadcrumbItem>
+        <BreadcrumbItem to="/components/breadcrumb">
+            <Icon type="logo-buffer"></Icon> Components
+        </BreadcrumbItem>
+        <BreadcrumbItem>
+            <Icon type="ios-cafe"></Icon> Breadcrumb
+        </BreadcrumbItem>
+    </Breadcrumb>
+      <v-app id="inspire" class="content">
         <v-layout justify-center>
           <v-flex xs12 sm12>
             <v-card>
@@ -42,7 +52,6 @@
           </v-flex>
         </v-layout>
       </v-app>
-    </div>
   </div>
 </template>
 <!-- .js 檔案在此相依 -->

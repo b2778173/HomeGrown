@@ -28,10 +28,6 @@
 </template>
 <!-- .js 檔案在此相依 -->
 <script>
-  import {
-    FileTextIcon,
-    ShoppingCartIcon
-  } from "vue-feather-icons";
 
   export default {
     name: "",

@@ -1,4 +1,5 @@
 <template>
+<div>
     <Menu active-name="1-2" :open-names="['1']" class="sidebar" style="width:">
         <Submenu name="1">
             <template slot="title">
@@ -34,6 +35,7 @@
             <MenuItem name="4-4">Option 12</MenuItem>
         </Submenu>
     </Menu>
+    </div>
 </template>
 <script>
     
