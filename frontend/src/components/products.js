@@ -22,5 +22,9 @@ export default {
     mounted() {},
     updated() {},
     beforeDestroy() {},
-    methods: {},
+    methods: {
+        viewDetails() {
+            alert('Details!');
+        }
+    },
 };
