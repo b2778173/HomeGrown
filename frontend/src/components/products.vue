@@ -19,7 +19,7 @@
                 <v-layout row wrap>
                   <v-flex v-for="card in cards" :key="card.title" v-bind="{ [`xs${card.flex}`]: true }">
                     <v-card>
-                      <v-img :src="card.src" height="200px" @click="viewDetails">
+                      <v-img :src="card.src" height="200px" @click="viewDetails()">
                         <v-container fill-height fluid pa-2>
                           <v-layout fill-height>
                             <v-flex xs12 align-end flexbox>

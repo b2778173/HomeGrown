@@ -3,11 +3,11 @@
     <Breadcrumb style="margin-left: 15px;float: left;">
         <BreadcrumbItem to="/">
             <Icon type="ios-home-outline"></Icon> Home
-        </BreadcrumbItem>
-   
-       
+        </BreadcrumbItem>    
     </Breadcrumb>
     <carousel></carousel>
+    <router-link to="products"><img class="content" src="../../static/assets/img/ads4.jpg"></router-link>
+      <img class="content" src="../../static/assets/img/ads5.jpg">
     <router-view></router-view>
   </div>
 </template>

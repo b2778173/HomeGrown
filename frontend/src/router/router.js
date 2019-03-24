@@ -5,7 +5,8 @@ import Home from '@/components/Home.vue'
 import Products from '@/components/products.vue'
 import Login from '@/views/login.vue'
 import ProductDetails from '@/components/productDetails.vue'
-Vue.config.devtools = true;
+import cart from '@/components/cart.vue'
+// Vue.config.devtools = true;
 
 Vue.use(Router)
 
@@ -27,6 +28,11 @@ export default new Router({
                     path: 'productDetails',
                     name: 'productDetails',
                     component: ProductDetails
+                },
+                {
+                    path: '/cart',
+                    name: 'cart',
+                    component: cart
                 }
             ]
         },

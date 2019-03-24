@@ -33,10 +33,7 @@
     name: "",
     mixins: [],
     extends: {},
-    components: {
-      FileTextIcon,
-      ShoppingCartIcon
-    },
+    components: {},
     props: [],
     data() {
       return {

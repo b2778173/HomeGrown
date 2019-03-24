@@ -1,6 +1,6 @@
 <template>
 <div>
-    <Menu active-name="1-2" :open-names="['1']" class="sidebar" style="width:">
+    <Menu active-name="1-2" :open-names="['1']" class="sidebar" style="font-size:18px">
         <Submenu name="1">
             <template slot="title">
                 <Icon type="ios-sunny-outline" />
@@ -16,8 +16,8 @@
                 <Icon type="ios-filing" />
                最新商品
             </template>
-            <MenuItem name="2-1">Option 5</MenuItem>
-            <MenuItem name="2-2">Option 6</MenuItem>
+            <MenuItem name="2-1">女裝</MenuItem>
+            <MenuItem name="2-2">男裝</MenuItem>
             <Submenu name="3">
                 <template slot="title">Submenu</template>
                 <MenuItem name="3-1">Option 7</MenuItem>

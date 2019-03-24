@@ -15,8 +15,8 @@
       <b-navbar-nav class="ml-auto">
         <b-nav-form>
           <b-form-input size="sm" class="mr-sm-2" type="text" placeholder="Search" />
-          <b-button size="sm" class="my-2 my-sm-0" type="submit">Search</b-button>
-          <v-icon class="icon">shopping_cart</v-icon>
+              <Button shape="circle" icon="ios-search">Search</Button>
+          <router-link to="/cart"><v-icon class="icon">shopping_cart</v-icon></router-link>
         </b-nav-form>
 
         <b-nav-item-dropdown text="Lang" right>
