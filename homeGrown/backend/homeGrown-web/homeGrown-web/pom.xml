@@ -9,10 +9,8 @@
 		<version>1.0.0</version>
 		<relativePath>../..</relativePath> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.id</groupId>
+	
 	<artifactId>homeGrown-web</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
 	<name>demo</name>
 	<description>Demo project for Spring Boot</description>
 
@@ -21,6 +19,11 @@
 	</properties>
 
 	<dependencies>
+		<dependency>
+			<groupId>com.ld</groupId>
+			<artifactId>homeGrown-products</artifactId>
+			<version>${project.version}</version>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>

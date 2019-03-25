@@ -15,6 +15,7 @@
 	<description>homeGrown</description>
 	<modules>
 		<module>backend/homeGrown-web</module>
-		<module>homeGrown-Core</module>
+		<module>backend/homeGrown-Core</module>
+		<module>backend/homeGrown-products</module>
 	</modules>
 </project>
