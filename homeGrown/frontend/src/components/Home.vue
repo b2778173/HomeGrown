@@ -1,13 +1,12 @@
 <template>
   <div>
-    <Breadcrumb style="margin-left: 15px;float: left;">
-        <BreadcrumbItem to="/">
-            <Icon type="ios-home-outline"></Icon> Home
-        </BreadcrumbItem>    
-    </Breadcrumb>
+    <Breadcrumb class="breadCrumb" separator=">">
+      <BreadcrumbItem to="/">Home</BreadcrumbItem>
+    </Breadcrumb><br>
+    <!-- <breadCrumb></breadCrumb> -->
     <carousel></carousel>
     <router-link to="products"><img class="content" src="../../static/assets/img/ads4.jpg"></router-link>
-      <img class="content" src="../../static/assets/img/ads5.jpg">
+    <router-link to=""><img class="content" src="../../static/assets/img/ads5.jpg"></router-link>
     <router-view></router-view>
   </div>
 </template>

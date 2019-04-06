@@ -1,15 +1,9 @@
 <template>
   <div>
-    <Breadcrumb style="margin-left: 15px;float: left;">
-        <BreadcrumbItem to="/">
-            <Icon type="ios-home-outline"></Icon> Home
-        </BreadcrumbItem>
-        <BreadcrumbItem to="/components/breadcrumb">
-            <Icon type="logo-buffer"></Icon> Components
-        </BreadcrumbItem>
-        <BreadcrumbItem>
-            <Icon type="ios-cafe"></Icon> Breadcrumb
-        </BreadcrumbItem>
+    <Breadcrumb class="breadCrumb" separator=">">
+        <BreadcrumbItem to="/homePage">Home</BreadcrumbItem>
+        <BreadcrumbItem to="/components/breadcrumb">Components</BreadcrumbItem>
+        <BreadcrumbItem>Breadcrumb</BreadcrumbItem>
     </Breadcrumb>
       <v-app id="inspire" class="content">
         <v-layout justify-center>

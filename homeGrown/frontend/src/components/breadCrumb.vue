@@ -1,17 +1,17 @@
 <template>
- <div>
-     <Breadcrumb>
-        <BreadcrumbItem to="/">
-            <Icon type="ios-home-outline"></Icon> Home
+    <Breadcrumb>
+        <BreadcrumbItem to="/">Home
+            <Icon type="ios-home-outline"></Icon> 
         </BreadcrumbItem>
-        <BreadcrumbItem to="/components/breadcrumb">
+        <BreadcrumbItem to="/">
             <Icon type="logo-buffer"></Icon> Components
         </BreadcrumbItem>
-        <BreadcrumbItem>
+        <BreadcrumbItem to=''>
             <Icon type="ios-cafe"></Icon> Breadcrumb
         </BreadcrumbItem>
     </Breadcrumb>
- </div>
 </template>
 <!-- .js 檔案在此相依 -->
-<script src="./breadCrumb.js"></script>
+<script>
+
+</script>

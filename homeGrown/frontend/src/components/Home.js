@@ -1,10 +1,11 @@
 import carousel from '@/components/carousel.vue'
+import breadCrumb from '@/components/breadCrumb.vue'
 
 export default {
     name: 'home',
     mixins: [],
     extends: {},
-    components: { carousel },
+    components: { carousel, breadCrumb },
     props: [],
     data() {
         return {};
