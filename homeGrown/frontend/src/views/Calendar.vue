@@ -1,12 +1,13 @@
 <template>
   <div>
-    <full-calendar
-      class
+    <full-calendar ref="mycalendar"
       :eventSources="eventSources"
-      :eventColor="color"
-      :config="config "
-      @day-click="go()"
+      :config="config"
+      @day-click="dayClick"
+      @event-selected="eventSelected"
+      style="margin: 3%"
     ></full-calendar>
+    <input ref="input" value="幹">
   </div>
 </template>
 <!-- .js 檔案在此相依 -->
@@ -25,14 +26,16 @@ export default {
             {
               title: "1人",
               start: "2019-04-04T10:00",
-              end: "2019-04-04T12:00"
+              end: "2019-04-04T12:00",
               // backgroundColor: "green",
               // color: "green",
+              ps: "預約要快狠準"
             },
             {
               title: "1人",
               start: "2019-04-04T13:00",
-              end: "2019-04-04T15:00"
+              end: "2019-04-04T15:00",
+              ps: "預約要快狠準"
             }
           ],
           color: "pink", // an option!
@@ -44,14 +47,25 @@ export default {
       ],
 
       config: {
-        // aspectRatio:5,
-        // contentHeight:500,
-        height: auto,
+        timezone: "local", // 練現在加入的時間為現在時區, 不然會轉為GMT+8
+        buttonText: { today: "本日" },
+        // buttonIcons: false,
+        customButtons: {
+          myCustomButton: {
+            text: "custom!",
+            click: function() {
+              alert("clicked the custom button!");
+            }
+          }
+        },
+        aspectRatio: 1.5,
+        contentHeight: 400,
+        // height: 250,
         // defaultView: "month",
         // defaultView: "agendaDay",
         defaultView: "agendaWeek",
         header: {
-          left: "prevYear, nextYear today, prev,next",
+          left: "today, prev,next, myCustomButton"
           // center: "",
           // right: "today prev,next"
         }
@@ -67,8 +81,22 @@ export default {
   updated() {},
   beforeDestroy() {},
   methods: {
-    go() {
-      alert("點得好!");
+    dayClick(info) {
+      console.log(info);
+      if (confirm("加入新事項?")) {
+        this.eventSources[0].events.push({
+          title: "2人",
+          start: info._d,
+          end: new Date(info._d.getTime() + 1000 * 60 * 30)
+        });
+      }
+    },
+    eventSelected(info) {
+      console.log(this.$refs.input.value);
+      alert(info.title + " " + info.ps);
+    },
+    eventMouseEnter(info) {
+      alert(info);
     }
   }
 };

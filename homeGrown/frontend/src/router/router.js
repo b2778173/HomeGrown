@@ -7,6 +7,8 @@ import Login from '@/views/login.vue'
 import ProductDetails from '@/components/productDetails.vue'
 import cart from '@/components/cart.vue'
 import calendar from '@/views/Calendar.vue'
+import calendar2 from '@/views/Calendar2.vue'
+import calendar3 from '@/views/Calendar3.vue'
 // Vue.config.devtools = true;
 
 Vue.use(Router)
@@ -46,6 +48,16 @@ export default new Router({
             path: '/calendar',
             name: 'calendar',
             component: calendar
+        },
+        {
+            path: '/calendar2',
+            name: 'calendar2',
+            component: calendar2
+        },
+        {
+            path: '/calendar3',
+            name: 'calendar3',
+            component: calendar3
         }
     ]
 })

@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div id="sidebar" class="" @click="console.log(this.$ref)">
     <Menu active-name="1-2" :open-names="['1']" class="sidebar" style="font-size:18px; width:auto">
       <Submenu name="1">
         <template slot="title">
@@ -59,7 +59,9 @@
     mounted() {},
     updated() {},
     beforeDestroy() {},
-    methods: {},
+    methods: {
+      
+    },
   };
 
 </script>
